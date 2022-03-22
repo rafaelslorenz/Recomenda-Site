@@ -1,0 +1,25 @@
+.imagem-logo{
+    width: 100px;
+    height: 90px;
+}
+
+.resumo-produto{
+    margin-bottom: 25px;
+}
+
+.btn-filtrar{
+    background-color: lightgrey;
+    border-radius: 4px;
+    border: 1px solid rgb(34, 29, 49);
+}
+
+
+/* Classes abaixo são específicas para o menu */
+
+.navbar{
+    padding:0;
+}
+
+.navbar-brand{
+    padding: 0;
+}
