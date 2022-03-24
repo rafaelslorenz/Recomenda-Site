@@ -1,16 +1,19 @@
 function selecionarCategoria(categoria, ev){
-    debugger
     let btnFiltrar = ev.currentTarget;
-    if (btnFiltrar.style.background == 'lightgrey'){
-        btnFiltrar.style.backgroundColor = '#3434ff !important';
-    };
-    if (btnFiltrar.style.backgroundColor == '#3434ff'){
-        btnFiltrar.style.backgroundColor = 'lightgrey';
-    }
+    verificarSeBtnFiltrado(btnFiltrar);
 }
-
 
 function selecionarGenero(genero, ev){
     let btnFiltrar = ev.currentTarget;
-    btnFiltrar.style.backgroundColor = 'blue';
+    verificarSeBtnFiltrado(btnFiltrar);
+}
+
+function verificarSeBtnFiltrado(btnFiltrar){
+    if (!btnFiltrar.classList.contains('btn-filtrar-active')){
+    
+        btnFiltrar.classList.add('btn-filtrar-active');
+    }
+    else{
+        btnFiltrar.classList.remove('btn-filtrar-active');
+    }
 }

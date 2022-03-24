@@ -1,10 +1,16 @@
 .imagem-logo{
-    width: 100px;
-    height: 90px;
+    width: 70px;
+    height: 60px;
+    padding: 5px;
 }
 
 .resumo-produto{
     margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.span-resumo-produto{
+    color:#E38F22 ;
 }
 
 .btn-filtrar{
@@ -13,13 +19,42 @@
     border: 1px solid rgb(34, 29, 49);
 }
 
+.btn-filtrar-active{
+    background-color: green;
+    
+}
+
+.container-conteudo{
+    background-color: #f8f9fa !important;
+    color: #103C61;
+    padding: 0 5.1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container-apresentacao-produto{
+    display: flex;
+}
+
+.imagem-watching{
+    width: 400px;
+}
+
 
 /* Classes abaixo são específicas para o menu */
 
 .navbar{
-    padding:0;
+    padding:5%;
 }
 
 .navbar-brand{
-    padding: 0;
+    padding:0;
+}
+
+.nav-link{
+    color: #103C61 !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-link:hover{
+    color: #E78200 !important;
 }
