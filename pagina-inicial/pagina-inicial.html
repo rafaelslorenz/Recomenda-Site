@@ -46,34 +46,44 @@
   <div class="container-conteudo">
     <div class="container-apresentacao-produto">
       <div class="resumo-produto">
-        Em dúvida sobre qual filme ou série assistir?
-        A gente <span class="span-resumo-produto">recomenda</span> pra você.
+        <div class="titulo-resumo">
+          Quer assistir um filme/série mas não sabe qual?
+          A gente <span class="span-resumo-produto">recomenda</span> pra você.
+        </div>
+        <div class="subtitulo-resumo">
+          É super fácil de usar, responda as duas perguntas abaixo que fazemos o resto ;)
+        </div>
       </div>
       <div class="container-imagem">
         <img class="imagem-watching" src="../images/watching.jpg">
-        <a href='https://br.freepik.com/fotos-vetores-gratis/mulher'>Mulher foto criado por freepik - br.freepik.com</a>
+        <a href='https://br.freepik.com/fotos-vetores-gratis/mulher'>Mulher foto criado por freepik -
+          br.freepik.com</a>
       </div>
     </div>
 
-    <div class="pergunta-categorias">O que está afim de assistir hoje?</div>
 
-    <button class="btn-filtrar" onclick="selecionarCategoria('Filme', event)">Filme</button>
-    <button class="btn-filtrar" onclick="selecionarCategoria('Série', event)">Série</button>
-    <button class="btn-filtrar" onclick="selecionarCategoria('Anime', event)">Anime</button>
+    <div class="container-questionario">
+      <div class="pergunta-categorias">O que está afim de assistir hoje?</div>
 
-    <br>
-    <br>
+      <button class="btn-filtrar" onclick="selecionarCategoria('Filme', event)">Filme</button>
+      <button class="btn-filtrar" onclick="selecionarCategoria('Série', event)">Série</button>
+      <button class="btn-filtrar" onclick="selecionarCategoria('Anime', event)">Anime</button>
 
-    <div class="pergunta-generos">Quais gêneros você mais gosta?</div>
+      <br>
+      <br>
 
-    <button class="btn-filtrar" onclick="selecionarGenero('Ação', event)">Ação</button>
-    <button class="btn-filtrar" onclick="selecionarGenero('Comédia', event)">Comédia</button>
-    <button class="btn-filtrar" onclick="selecionarGenero('Terror', event)">Terror</button>
-    <button class="btn-filtrar" onclick="selecionarGenero('Suspense', event)">Suspense</button>
-    <br>
-    <br>
+      <div class="pergunta-generos">Quais gêneros você mais gosta?</div>
 
-    <button onclick="consultarBD()">Recomendar</button>
+      <button class="btn-filtrar" onclick="selecionarGenero('Ação', event)">Ação</button>
+      <button class="btn-filtrar" onclick="selecionarGenero('Comédia', event)">Comédia</button>
+      <button class="btn-filtrar" onclick="selecionarGenero('Terror', event)">Terror</button>
+      <button class="btn-filtrar" onclick="selecionarGenero('Suspense', event)">Suspense</button>
+      <br>
+      <br>
+
+      <button onclick="consultarBD()">Recomendar</button>
+    </div>
+
   </div>
   <script src="pagina-inicial.js"></script>
 </body>
